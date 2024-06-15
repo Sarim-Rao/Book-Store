@@ -23,7 +23,7 @@ const index = () => {
 
     return (
         <div
-            className={` flex justify-between max-w-[1200px] container mx-auto md:px-20 px-4 sticky top-0 left-0 right-0 z-10 ${sticky
+            className={` flex justify-between max-w-screen-2xl container mx-auto md:px-20 px-4 sticky top-0 left-0 right-0 z-10 ${sticky
                 ? " sticky-navbar shadow-md bg-base-100 duration-300 transition-all ease-in-out"
                 : ""
                 } `}

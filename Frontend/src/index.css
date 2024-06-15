@@ -13,3 +13,18 @@
 body {
   font-family: "Poppins", "sans-serif";
 }
+
+.slick-slide > div {
+  margin: 0 30px !important;
+}
+
+.slick-slide > div:first-child {
+  margin-left: 0 !important;
+}
+
+.slick-arrow {
+  display: none !important;
+}
+.slick-dots li button:before {
+  font-size: 30px !important;
+}

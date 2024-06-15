@@ -3,7 +3,7 @@ import bannerImg from "../../assets/Images/Banner.png"
 
 const Banner = () => {
     return (
-        <div className='max-w-[1200px] container mx-auto md:px-20 px-4 w-full mt-12 md:mt-30 flex flex-col justify-center md:flex-row md:items-center md:justify-between'>
+        <div className='max-w-screen-2xl container mx-auto md:px-20 px-4 w-full mt-12 md:mt-30 flex flex-col justify-center md:flex-row md:items-center md:justify-between'>
 
             <div className='w-full md:w-1/2 order-2 md:order-1'>
 
@@ -27,7 +27,7 @@ const Banner = () => {
 
             <div className='w-full md:w-1/2 order-1 md:order-2'>
 
-                <img src={bannerImg} alt="bannerImg" className='w-[392px] ml-auto' />
+                <img src={bannerImg} alt="bannerImg" className='ml-auto' />
 
             </div>
 

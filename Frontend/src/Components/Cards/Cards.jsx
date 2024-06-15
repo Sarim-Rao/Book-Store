@@ -1,20 +1,18 @@
 import React from 'react'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
-const Cards = () => {
+const Cards = ({ item }) => {
     return (
-        <div className="card bg-base-100 shadow-xl">
-            <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+        <div className="card">
+            <figure><img src={item.image} alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title">
-                    Shoes!
-                    <div className="badge badge-secondary">NEW</div>
+                    {item.name}
+                    <div className="badge badge-secondary">{item.catagory}</div>
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
-                    <div className="badge badge-outline">Fashion</div>
-                    <div className="badge badge-outline">Products</div>
+                <p>{item.title}</p>
+                <div className="card-actions flex justify-between items-center">
+                    <div className="badge badge-outline">${item.price}</div>
+                    <div className="badge badge-outline hover:bg-pink-500 hover:text-white cursor-pointer">Buy Now</div>
                 </div>
             </div>
         </div>

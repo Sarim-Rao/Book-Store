@@ -1,17 +1,20 @@
 import React from 'react'
-import Navbar from "./Components/Navbar/Navbar"
-import Footer from "./Components/Footer/Footer"
-import Banner from './Components/Banner/Banner'
-import FreeBook from './Components/FreeBook/FreeBook'
+import { Route, Routes } from 'react-router-dom'
+import Home from './Pages/Home/Home'
+import Courses from './Pages/Courses/Courses'
+import DefaultLayout from './Layout/DefaultLayout'
 const App = () => {
   return (
-    <React.Fragment>
-      <Navbar />
-      <Banner />
-      <FreeBook />
-      <Footer />
+    <>
 
-    </React.Fragment>
+      <Routes>
+        <Route element={<DefaultLayout />}>
+          <Route path='/' element={<Home />} />
+          <Route path='/courses' element={<Courses />} />
+        </Route>
+      </Routes>
+
+    </>
   )
 }
 

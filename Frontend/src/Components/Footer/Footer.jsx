@@ -2,7 +2,7 @@ import React from 'react'
 
 const index = () => {
     return (
-        <div className='max-w-[1200px] container mx-auto md:px-20 px-4 mt-4'>
+        <div className='max-w-screen-2xl container mx-auto px-4 md:px-20 mt-9'>
             <hr />
             <footer className="footer footer-center p-10 text-base-content rounded">
                 <nav className="grid grid-flow-col gap-4">
