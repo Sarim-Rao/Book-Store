@@ -2,7 +2,7 @@ import React from 'react'
 
 const Cards = ({ item }) => {
     return (
-        <div className="card">
+        <div className="card hover:scale-95 duration-200">
             <figure><img src={item.image} alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title">
